@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="icon" href="images/favicon.ico" type="image/ico" />-->
+
+    <title>Eng. Web - JestAsset </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md" onload="loadPageIndex();" >
+    <div class="container body" >
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-try" style="transform: rotate(190deg);"></i> <span>JestAsset</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info 
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>
+            menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Menu</h3>
+                <ul class="nav side-menu">
+                  <li id="asset"><a href="javascript:setNewPage('page/asset.html');"><i class="fa fa-line-chart"></i> Assets <span ></span></a></li>
+                  <li id="news"><a href="javascript:setNewPage('page/news.html');"><i class="fa fa-newspaper-o"></i> News <span ></span></a></li>
+                  <li id="port"><a href="javascript:setNewPage('page/portfolio.html');"><i class="fa fa-book"></i> Portfolio <span></span></a></li>
+                  <li id="hist"><a href="javascript:setNewPage('page/historical.html');"><i class="fa fa-history"></i> Historical <span></span></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="javascript:btnLoginLogout();"><i class="fa fa-sign-in pull-right"></i><span id="crt-login"></span></a></li>
+
+                <li id="userFromProfile">
+                  <a href="#" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="" alt=""> <!--images/img.jpg-->
+                    <span id="userNameSession"></span>
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a  class="fa fa-question-circle" href="javascript:setNewPage('page/perfil.html');"><span>&nbsp;&nbsp;Profile</span></a></li>
+                    <li><a  class="fa fa-question-circle" href="javascript:setNewPage('page/help.html');"><span>&nbsp;&nbsp;Help</span></a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main" id="right_col" >
+           <object width="100%"  class="pages" id="pages" data=""></object>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Desenvolvido por <a href="#"> rita, sandra, pedro</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.js"></script>
+
+    <script src="js/config.js"></script>
+
+  </body>
+</html>

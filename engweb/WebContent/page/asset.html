@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Eng. Web - JestAsset </title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../css/style.css" rel="stylesheet">
+
+
+
+
+  </head>
+
+  <body>
+  <!-- main -->
+   <div class="container body" >
+       <div class="right_col">
+         <div class="row" style="width: calc(100% - 20px);">
+
+            <div class="col-md-3">
+              <div class="item">
+                  <h3><span class="title">Asset</span></h3>
+                  <div id="name"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="item">
+                    <h3><span class="title">Change (1D, 4h, 1h)</span></h3>
+                    <div id="change"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="item">
+                    <h3><span class="title">Sell</span></h3>
+                    <div id="sell"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="item">
+                    <h3><span class="title">Buy</span></h3>
+                    <div id="buy"></div>
+                </div>
+            </div>
+                
+               
+          </div><!-- /row -->
+       </div>
+   
+  </div>
+
+
+	<div id="sell-modal" class="modal">
+	    <!-- Modal content -->
+		<div class="modal-content">
+	    	<span class="close">&times;</span>	
+	     	<div class="tab-content">
+	      		<div id="sell-tab"></div>
+			</div>
+	  	</div>
+	</div>
+	
+	<div id="buy-modal" class="modal">
+	    <!-- Modal content -->
+		<div class="modal-content">
+	    	<span class="close">&times;</span>	
+	     	<div class="tab-content">
+	      		<div id="buy-tab"></div>
+			</div>
+	  	</div>
+	</div>
+
+
+
+      <!-- footer content -->
+        <footer style="width: calc(100% - 20px); margin-left: 8px !important;">
+          <div >
+            <div class="row">
+              <div class="col-md-3">
+                <h2>Available</h2>
+                <p style="display: 'inline'">$</p><p id="available">100.00</p>
+              </div>
+              <div class="col-md-3">
+                <h2>Total Allocated</h2>
+                <p style="display: 'inline'">$</p><p id="invested">150.00</p>
+              </div>
+              <div class="col-md-3">
+                <h2>Profit</h2>
+                <p style="display: 'inline'">$</p><p id="profit">3.64</p>
+              </div>
+              <div class="col-md-3">
+                <h2>Equity</h2>
+                <p style="display: 'inline'">$</p><p id="equity">253.64</p>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/markitondemand.js"></script>
+    <script type="text/javascript">
+	    $(document).ready(function () {
+		    var list = ['AAPL', 'MSFT', 'GOOG', 'EURUSD', 'OIL', 'GOLD'];
+		        list.forEach(function(element) {
+			    getAsset(element);
+
+		    });
+	    });
+	</script>
+
+
+
+      <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../js/custom.js"></script>
+
+    <script src="../js/config.js"></script>
+  
+  </body>
+</html>

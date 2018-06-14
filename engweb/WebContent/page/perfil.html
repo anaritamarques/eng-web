@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Ajax para atualizar a pagina para quando for utilizar o modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <!-- Bootstrap -->
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../css/style_profile.css" rel="stylesheet">
+    <script src="../js/config.js"></script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+  <h1>Profile</h1>
+  <!-- main -->
+  <div class="main">
+    <!-- Form da pagina -->
+    <form action="#" method="post">
+      <!-- Parte esquerda do formulario-->
+      <div class="w3">
+        <div class="profile-form ">
+          <div class="perfil-form">
+            <!--Caixas de texto do formulario esquerdo -->
+            <input id ="name" type="text" name="username" placeholder="Username" >
+            <input id ="name" type="text" name="name" placeholder="Full Name">
+            <input id ="email" type="email" name="email" placeholder="E-mail">
+            <input id ="contact" type="text" name="contact" placeholder="Contact">
+            <input id ="pass" type="password" name="password" placeholder="Password">
+          </div>
+        </div>
+      </div>
+      <!-- Fim da parte esquerda do formulario-->
+      <!-- Parte direita do formulario-->
+      <div class="agile">
+        <div class="profile-form">
+          <h3>Credit Card Details</h3>
+          <!-- icons credit card-->
+          <i class="fa fa-cc-amex"></i>
+          <i class="fa fa-cc-visa"></i>
+          <i class="fa fa-cc-discover"></i>
+          <i class="fa fa-cc-paypal"></i>
+          <div class="perfil-form">
+            <!--Caixas de texto do formulario direito -->
+            <input id= "credit-number" name="credit-number" class="cc-number" type="text" placeholder="Card Number">
+            <input id= "credit-expires" name="credit-expires" class="cc-expires" type="text" placeholder="MM / YY">
+            <input name="credit-cvc" type="text" pattern="^\d{3}" title="only digits"  class="cc-cvc" maxlength="3" placeholder="CVC">
+          </div>
+        </div>
+      </div>
+      <!--Fim da parte direita do formulario-->
+      <!-- Botao central -->
+      <div class= "submit">
+        <a class="btn btn-default submit" href="#" >Submit Changes</a>
+      </div>
+      <!--Fim do Botao central -->
+    </form>
+    <!--Fim do formulario da Pagina-->
+    <!--Apresentação do Plafond na zona final da Pagina -->
+    <div class="plafond">
+      <div class="currentPlafond">
+        <h6>Plafond</h6>
+        <span>236.47$</span>
+      </div>
+      <!--Botao que vai abrir o modal-->
+      <div class="addWithdraw">
+        <a class="btn btn-default submit" data-dismiss="modal" href="javascript:getModalWithDrow('block');">Update Plafond</a>
+      </div>
+    </div>
+    <!--Fim da presentação do Plafond na zona final da Pagina -->
+  </div>
+
+    <!-- Modal-->
+    <div id="modelFrame" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+          <span  onclick="getModalWithDrow('none');" class="close">&times;</span>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#add">Add Plafond</a></li>
+          <li><a data-toggle="tab" href="#withdraw">Withdraw Funds</a></li>
+        </ul>
+        <!-- Conteudo do Tab-->
+        <div class="tab-content">
+          <div id="add" class="tab-pane fade in active">
+            <!-- Modal Add Plafond-->
+            <h3>Add Plafond</h3>
+            <form action="" method="post">
+                <input type="number" placeholder="Amout (&dollar;)" min="0" max="10000" step="0.5" value="" name="quantity" id="quantity" required="required" />
+                <br>
+                <input id ="conf" type="password" name="conf" placeholder="Confirm your password"/><br>
+                <div class= "submitAddWith">
+                  <a class="btn btn-default submit" href="">Confirm</a>
+                </div>
+            </form>
+          </div>
+          <!-- Modal Withdraw Funds-->
+          <div id="withdraw" class="tab-pane fade">
+            <h3>Withdraw Funds</h3>
+            <form action="" method="post">
+              <span class="dlr">
+                <input type="number" placeholder="Amout (&dollar;)" min="0" max="10000" step="0.5" value="" name="quantity" id="quantity" required="required" />
+              </span>
+              <input id ="conf" type="password" name="conf" placeholder="Confirm your password"><br>
+              <div class= "submitAddWith">
+                <a class="btn btn-default submit" href="">Confirm</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

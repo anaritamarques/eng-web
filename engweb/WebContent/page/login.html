@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gentelella Alela! | </title>
+
+   <!-- Bootstrap -->
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../css/style_login.css" rel="stylesheet">
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+    <script src="../js/config.js"></script>
+
+        <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+  </head>
+
+  <body onload="onLoadLoginPage();">
+   
+  <h1>JestAsset - Acesso </h1>
+  <!-- main -->
+  <div class="main">
+    <!--login-profile-->
+    
+    <!--login-profile-->
+    <!--signin-form-->
+    <div class="w3">
+      <div class="signin-form profile">
+        <h3>Login</h3>
+        
+        <div class="login-form">
+          <form action="#" method="post">
+            <input id="email_login" type="text" name="email" placeholder="E-mail" required="">
+            <input id="pass_login" type="password" name="password" placeholder="Password" required="" >
+            <div>
+                <a class="btn btn-default submit" href="javascript:validateLogin();">Log in</a>
+                <a class="reset_pass" href="#">Lost your password?</a>
+              </div>
+          </form>
+          <br>
+          <br>
+          <div id="erroDivLogin"></div>
+        </div>
+        <div class="header-social wthree">
+              <a href="#" class="face"><h5>Facebook</h5></a>
+              <a href="#" class="goog"><h5>Google+</h5></a>
+            </div>
+      </div>
+    </div>
+    <div class="agile">
+      <div class="signin-form profile">
+        <h3>Register</h3>
+        
+        <div class="login-form">
+          <form action="#" method="post">
+            <input type="text" id="name" name="name" placeholder="Full Name" required="">
+            <input type="text" id="username" name="username" placeholder="Username" required="">
+            <input type="text" id="email" name="email" placeholder="E-mail" required="">
+            <input type="text" id="contacto" name="contacto" placeholder="Contact" required="">
+            <input type="password" id="pass" name="pass" placeholder="Password" required="">
+            <input type="password" id="pass_conf" name="pass_conf" placeholder="Confirm Password" required="">
+             <div>
+                <a class="btn btn-default submit" href="javascript:newUser();">Submit</a>
+              </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+    <div class="clear"></div>
+    <!--//signin-form-->  
+  </div>
+  <div class="copyright">
+    Desenvolvido por <a href="https://colorlib.com"> rita, sandra, pedro</a>
+  </div>          
+
+  </body>
+</html>
